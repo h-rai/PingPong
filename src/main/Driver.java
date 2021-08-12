@@ -4,44 +4,49 @@ import java.util.Scanner;
 
 class Driver{
     public static void main(String[] args){
-        int option = 0;
-        System.out.println("LOADED.");
+
+        int terminalOption = -1;
+        String terminalString = "";
+        Person customer = new Person();
         Scanner sc = new Scanner(System.in);
-        option = sc.nextInt();
 
-        while(option != 0){
+        do{
             Menu.showMenu();
-            option = sc.nextInt();
-            switch(option){
-                case 1:
-                    System.out.println("ONE");
-                    break; 
-                case 2:
-                    System.out.println("TWO");
-                    break;
-                case 3:
-                    System.out.println("THREE");
-                    break;
-                case 4:
-                    System.out.println("FOUR");
-                    break;
-                default:
-                    break;
+            terminalOption = sc.nextInt();
+
+            switch(terminalOption){
+            case 1:
+                System.out.println("\n------------------");
+                System.out.print("Username: ");
+                terminalString = sc.next();
+                customer.setUsername(terminalString);
+                System.out.print("Password: ");
+                terminalString = sc.next();
+                customer.setPassword(terminalString);
+                System.out.println("Status:   failed");
+                System.out.println("------------------\n");
+
+                // We can change the framework, so it would work with authentication. Verify if the password is strong enough... 
+                // Condtions, must have a Capital, non-capital, numbers, symbols, and min of length of 8.
+                break; 
+            case 2:
+                System.out.println("TWO");
+                break;
+            case 3:
+                System.out.println("THREE");
+                break;
+            case 4:
+                System.out.println("FOUR");
+                break;
+            default:
+                break;
+                
             }
+        }while(terminalOption != 0);
 
-
-
-        }
-
-
-
-        while(option != 4){
-            Menu.showMenu();
-        }
+            sc.close();
 
     }
-
-
-
-    
 }
+
+
