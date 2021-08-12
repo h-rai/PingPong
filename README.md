@@ -1,5 +1,5 @@
 # PingPong
-![alt text](https://github.com/h-rai/PingPong/Documents/official_logo.png?raw=true)
+![alt text](https://github.com/h-rai/PingPong/official_logo.png?raw=true)
 
 Work in progress.
 
