@@ -1,12 +1,13 @@
 # PingPong
 ![alt text](https://github.com/h-rai/PingPong/blob/main/official_logo.png?raw=true)
 
-Work in progress.
 
-Mission:
+**Mission**
 
-Acknowledged the importance of digital and incident management progress in the future of digital transformation. The goal is to design a ticketing management system to reduce SLA for a problem.
+**Solutions**
 
-Technology: 
+**Requirments**
 
-JAVA, Spring, Database...
+**Design**
+
+**Technology Stack:** JAVA, SPRING, SQL DATABASES
